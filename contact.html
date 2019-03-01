@@ -8,44 +8,54 @@
     </head>
     
     <body>
-        <div class="header">
-            <div class="headerContent">
-                <h1 class="headingText">Jihong Jin</h1>
-                <ul class="otherText">
-                    <li><a href="./index.html">About</a></li>
-                    <li>|</li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li>|</li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="entireContent">
-            <div class="headingText">
-                <h2>Contact</h2>
-            </div>
-            <div class="mainContent otherText">
-                <form>
-                    Name<br><input type="text" name="name"><br>
-                    Email<br><input type="email" name="email"><br>
-                    Message<br><textarea name="message" rows="10"></textarea><br>
-                    <button type="button" onclick="">Submit</button>
-                </form>
+        <header>
+            <nav>
+				<span id="jihongName" class="headingText">
+	                <h1>Jihong Jin</h1>
+				</span>
+				<div class="otherText">
+					<ul>
+						<li>
+							<a href="./index.html">About</a>
+						</li>
+						<li>
+							<a href="./portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+            </nav>
+        </header>
+
+        <div class="mainContent">
+			<div class="wrapper"> <!--div class="row"-->
+				<div class="headingText" style="border-bottom: 2px solid #dddddd;">
+					<h2>Contact</h2>
+				</div>
+			</div>
+			<div>
+				<div class="otherText">
+					<form>
+						<div>
+							<label for="contactName">Name</label><br>
+							<input type="text" id="contactName" placeholder="e.g., Jane Doe">
+						</div>
+						<div>
+							<label for="contactEmail">Email</label><br>
+							<input type="text" id="contactEmail" placeholder="e.g., janedoe@email.com">
+						</div>
+						<div>
+						  <label for="contactMsg">Message</label><br>
+						  <textarea id="contactMsg" rows="10"></textarea>
+						</div>
+						<button type="button" onclick="">Submit</button>
+					</form>
+				</div>
             </div>
         </div>
 
-        <div class="footer otherText">Copyright&copy;</div>
+        <footer class="otherText">Copyright&copy;</footer>
     </body>
 </html>
-
-
-<!--
-
-_(Hint: You won't need to use exact pixels for anything other than the container)_
-
-9. **Protip**: Use the Chrome extensions [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh) and [Browser Width](https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh) to see the browser dimensions in Chrome.
-
-10. Deploy your new portfolio (now with media queries!) to GitHub Pages.
-
--->

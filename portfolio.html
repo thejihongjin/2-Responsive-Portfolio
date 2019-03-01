@@ -8,26 +8,36 @@
     </head>
     
     <body>
-        <div class="header">
-            <div class="headerContent">
-                <h1 class="headingText">Jihong Jin</h1>
-                <ul class="otherText">
-                    <li><a href="./index.html">About</a></li>
-                    <li>|</li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li>|</li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="entireContent">
-            <div class="headingText">
-                <h2>Portfolio</h2>
+        <header>
+            <nav>
+				<span id="jihongName" class="headingText">
+	                <h1>Jihong Jin</h1>
+				</span>
+				<div class="otherText">
+					<ul>
+						<li>
+							<a href="./index.html">About</a>
+						</li>
+						<li>
+							<a href="./portfolio.html">Portfolio</a>
+						</li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+            </nav>
+        </header>
+      
+        <div class="mainContent">
+		    <div class="wrapper"> <!--div class="row"-->
+				<div class="headingText" style="border-bottom: 2px solid #dddddd;">
+					<h2>Portfolio</h2>
+				</div>
             </div>
             
-            <div class="mainContent otherText imgFlexbox">
-                <div class="imgBox">
+            <div class="otherText imgFlex">
+                <div class="imgBox"> <!--div class="col-lg-4 col-md-6 col-sm-12"-->
                     <img src="./assets/images/hangman.jpg" alt="Hangman">
                     <div class="imgCaption">Hangman</div>
                 </div>
@@ -50,6 +60,6 @@
             </div>
         </div>
 
-        <div class="footer otherText">Copyright&copy;</div>
+        <footer class="otherText"-->Copyright&copy;</footer>
     </body>
 </html>
