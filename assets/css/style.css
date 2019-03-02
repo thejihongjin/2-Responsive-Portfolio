@@ -12,6 +12,7 @@ body {
 }
 
 header {
+	min-width: 100vw;
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 25px;
@@ -160,7 +161,11 @@ footer {
 }
 
 
-/*need to fix header width/alignment in all media queries...*/
+/*
+need to fix header width/alignment in all media queries... 
+mainContent not centered? - right margin larger
+???
+*/
 @media (max-width: 980px) { /*desktop*/
 
 	.mainContent {
@@ -193,8 +198,18 @@ footer {
 		flex-direction: column;
 	}
 
+	.mainContent {
+		max-width: 100vw;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
 	#jihongName, ul {
 	    text-align: center;
+	}
+
+	img, .imgCaption {
+	    width: 100%;
 	}
   
 }
